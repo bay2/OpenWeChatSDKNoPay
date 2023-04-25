@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OpenWeChatSDKNoPay"
-  s.version = "2.0.2"
+  s.version = "2.0.2+1"
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.license = {"type"=>"MIT", "text"=>"LICENSE"}
   s.authors = {"JarvanMo"=>"jarvan.mo@gmail.com"}
@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.vendored_frameworks   = 'WechatOpenSDK-XCFramework.xcframework'
-
+  s.frameworks = 'CoreGraphics', 'Security', 'WebKit'
+  s.libraries = 'c++', 'z', 'sqlite3.0'
 
   # s.default_subspec = "precompiled"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
