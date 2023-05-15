@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OpenWeChatSDKNoPay"
-  s.version = "2.0.2+1"
+  s.version = "2.0.2+2"
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.license = {"type"=>"MIT", "text"=>"LICENSE"}
   s.authors = {"JarvanMo"=>"jarvan.mo@gmail.com"}
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}"
   }
 
-  s.platform     = :ios, '12.0'
+  s.platform     = :ios, '11.0'
   s.requires_arc = true
 
   s.vendored_frameworks   = 'WechatOpenSDK-XCFramework.xcframework'
