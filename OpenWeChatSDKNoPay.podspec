@@ -7,9 +7,8 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/JarvanMo/OpenWeChatSDKNoPay"
 
   
-   s.source = {
-    :git => "https://github.com/JarvanMo/OpenWeChatSDKNoPay",
-    :tag => "#{s.version}"
+  s.source = {
+    :http => "https://dldir1.qq.com/WechatWebDev/opensdk/XCFramework/OpenSDK2.0.4_NoPay.zip" 
   }
 
   s.platform     = :ios, '11.0'
